@@ -53,6 +53,16 @@ h3 {
   font-family: 'Architects Daughter', cursive;
 }
 
+.grid2 p {
+  font-family: 'Architects Daughter', cursive;
+}
+
+.grid2 h4 {
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bolder;
+  color: rgb(5, 150, 138);
+}
+
 .footer p {
   font-family: 'Architects Daughter', cursive;
   font-size: 80%;
@@ -188,7 +198,7 @@ h3 {
 
 /*Grid2_Projects*/
 .grid2{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: grid;
   grid-template-rows: 1fr 1fr 1fr ;
   grid-template-columns:1fr;
@@ -199,7 +209,8 @@ h3 {
 }
 
 .projects_Pic_Text{
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  
   /*grid-area: projects_Pic_Text;*/
   display: grid;
   grid-template-rows: 0.3fr 1fr;
@@ -210,7 +221,9 @@ h3 {
 }
 
 .projects_Text_Pic{
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  background-color:  rgb(21,27,67,1);
+  color: white;
   display: grid;
   grid-template-rows: 0.3fr 1fr;
   grid-template-columns:1fr 1fr;
@@ -221,13 +234,13 @@ h3 {
 
 
 .project_heading {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   grid-area: project_heading;
   display: block; 
 }
 
 .project_pic {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   grid-area: project_pic;
   display: block;
 }
@@ -240,7 +253,7 @@ h3 {
 }
 
 .project_text {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   grid-area: project_text;
   display: block;
 }
