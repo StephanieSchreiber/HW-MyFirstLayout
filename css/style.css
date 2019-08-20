@@ -74,7 +74,6 @@ h3 {
   .showDiv {
     background-color: lightgrey;
     border: 1px solid blue;
-    
   }
 
   .header {
@@ -82,6 +81,8 @@ h3 {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    height: auto;
+   grid-template-areas:
+    "header-name" "header-pic" "header-link";
   }
 
   .nav {
@@ -110,15 +111,17 @@ h3 {
 
   .header-name {
     padding: 55% 10% 15% 10%; 
+    display: inline-block;
   }
 
   .header-pic {
     vertical-align: middle;
+    display: inline-block;
+    border: #02B6A6 1px solid;
   }
 
   .header-pic img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -128,6 +131,7 @@ h3 {
   .header-link {
     padding: 55% 10% 15% 0%;
     display: grid;
+    border: #02B6A6 1px solid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns:1fr;
     grid-template-areas:
@@ -135,6 +139,7 @@ h3 {
     "linkedinlContact"
     "facebookContact"
     ;
+    display: inline-block;
   }
  
   .emailContact{
@@ -185,19 +190,41 @@ h3 {
 }
 
 
+* {
+  box-sizing: border-box;
+}
 
 .clearfix {
     overflow: auto;
 }
-  @media only screen and (max-width: 720px) {
-    .heroImg {
-  
-    grid-template-columns: none;
+
+
+@media only screen and (max-width: 1060px) {
+  h1 {
+    font-size: 200%;
+  }
+  .header-name {
+    padding: 50% 10% 0% 10%; 
+    display: inline-block;
+  }
+}
+
+
+  /*@media only screen and (max-width: 720px) {
+    .grid {
+      display: grid;
+      grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns:1fr;
+      grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
     }
   
-  }
+  }*/
   
-  @media only screen and (max-width: 500px) {
+ /* @media only screen and (max-width: 500px) {
   
     .grid {
       display: grid;
@@ -251,4 +278,4 @@ h3 {
       margin: 10px 5px;
     } 
   
-  }
+  }*/
