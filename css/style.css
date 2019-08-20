@@ -63,6 +63,10 @@ h3 {
   color: rgb(5, 150, 138);
 }
 
+.grid2 h3 {
+  color: #F2705E; 
+}
+
 .footer p {
   font-family: 'Architects Daughter', cursive;
   font-size: 80%;
@@ -103,6 +107,7 @@ h3 {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       background-color: #1F1B43;
+    
   }
   .main-content {
     color: white;
@@ -211,6 +216,8 @@ h3 {
 .projects_Pic_Text{
   /* border: 1px solid green; */
   
+  padding: 20px 20px;
+  
   /*grid-area: projects_Pic_Text;*/
   display: grid;
   grid-template-rows: 0.3fr 1fr;
@@ -234,15 +241,19 @@ h3 {
 
 
 .project_heading {
+  text-align: center;
+  padding: 5% 10%;
   /* border: 1px solid green; */
   grid-area: project_heading;
   display: block; 
 }
 
 .project_pic {
+  padding: 0% 10% 10%;
   /* border: 1px solid green; */
   grid-area: project_pic;
-  display: block;
+  display: inline-block;
+  align-content: center;
 }
 
 .project_pic img {
@@ -250,14 +261,17 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  
 }
 
 .project_text {
+  text-align: start;
+  padding: 0% 10% 10%;
   /* border: 1px solid green; */
   grid-area: project_text;
-  display: block;
+  display: inline-block;
+  align-content: flex-start;
 }
-
 * {
   box-sizing: border-box;
 }
