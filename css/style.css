@@ -63,24 +63,17 @@ h3 {
 /* Main Grid*/
 .grid {
     display: grid;
-    grid-template-rows: 1fr 0.1fr 0.5fr 0.08fr;
+    border: 1px solid green;
+    grid-template-rows: 1fr 0.1fr 0.5fr;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-areas:
     "header header header"
     "nav nav nav"
-    "main main main"
-    "footer footer footer";
+    "main main main";
   }
 
-  .spacing {
-    margin:0px 0px;
-  }
 
-  .showDiv {
-    background-color: lightgrey;
-    border: 1px solid blue;
-  }
-
+/* Header Grid*/
   .header {
    grid-area: header;
    display: grid;
@@ -111,7 +104,8 @@ h3 {
       grid-area: footer;
       color: white;
       background-color: rgb(21,27,67,0.5);
-      text-align: center;
+      text-align: center; 
+      border: 1px solid rgb(21,27,67,0.5);
   } 
 
   .header-name {
@@ -122,7 +116,6 @@ h3 {
   .header-pic {
     vertical-align: middle;
     display: inline-block;
-    border: #02B6A6 1px solid;
   }
 
   .header-pic img {
@@ -132,18 +125,16 @@ h3 {
     display: block;
  }
 
-
+/* Header-Link Grid*/
   .header-link {
     padding: 55% 10% 15% 0%;
     display: grid;
-    border: #02B6A6 1px solid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns:1fr;
     grid-template-areas:
     "emailContact"
     "linkedinlContact"
-    "facebookContact"
-    ;
+    "facebookContact";
     display: inline-block;
   }
  
@@ -194,6 +185,65 @@ h3 {
     /*border: 2px solid darkslategray;*/
 }
 
+
+/*Grid2_Projects*/
+.grid2{
+  border: 1px solid green;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-columns:1fr;
+  grid-template-areas:
+  "projects_Pic_Text"
+  "projects_Text_Pic"
+  "projects_Pic_Text";
+}
+
+.projects_Pic_Text{
+  border: 1px solid green;
+  /*grid-area: projects_Pic_Text;*/
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:
+  "project_heading project_heading"
+  "project_pic project_text";
+}
+
+.projects_Text_Pic{
+  border: 1px solid green;
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:
+  "project_heading project_heading"
+  " project_text project_pic";
+}
+
+
+.project_heading {
+  border: 1px solid green;
+  grid-area: project_heading;
+  display: block; 
+}
+
+.project_pic {
+  border: 1px solid green;
+  grid-area: project_pic;
+  display: block;
+}
+
+.project_pic img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.project_text {
+  border: 1px solid green;
+  grid-area: project_text;
+  display: block;
+}
 
 * {
   box-sizing: border-box;
