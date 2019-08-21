@@ -75,7 +75,69 @@
         grid-column-end: 2;
     } 
 
-    /* Navigation Grid*/
+    /*Projects*/
+
+    .grid2{
+      /* border: 1px solid green; */
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr ;
+      grid-template-columns:1fr;
+      grid-template-areas:
+      "projects_Pic_Text"
+      "projects_Text_Pic"
+      "projects_Pic_Text";
+    }
+
+
+    .projects_Pic_Text{
+      /* border: 1px solid green; */
+      
+      padding: 20px 20px;
+      
+      /*grid-area: projects_Pic_Text;*/
+      display: grid;
+      grid-template-rows: 0.3fr 1fr 1fr;
+      grid-template-columns:1fr;
+      grid-template-areas:
+      "project_heading"
+      "project_pic"
+      "project_text"
+      ;
+    }
+
+    .projects_Text_Pic{
+      /* border: 1px solid green; */
+      background-color:  rgb(21,27,67,1);
+      color: white;
+      display: grid;
+      grid-template-rows: 0.3fr 1fr 1fr;
+      grid-template-columns:1fr ;
+      grid-template-areas:
+      "project_heading"
+      "project_pic"
+      "project_text";
+    }
+
+    .project_heading {
+
+      grid-column-start: 1;
+    grid-column-end: 2;
+    }
+
+    .project_pic{
+
+      grid-column-start: 1;
+    grid-column-end: 2;
+    display: block;
+    }
+
+    .project_text {
+
+      grid-column-start: 1;
+    grid-column-end: 2;
+    display: block;
+
+    }
 
 
 }
